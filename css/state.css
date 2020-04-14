@@ -1,0 +1,16 @@
+.jieshi{
+	transition-property:all;
+	transition-duration:0.3s;
+}
+.one-jc.zxsljc:hover >.jieshi{
+	 transform:translatey(-100%); 
+	/* top:31%; */
+}
+/* 字体变色 */
+.sousu-content > li > a{
+	transition-property:all;
+	transition-duration:0.2s;
+}
+.sousu-content > li > a:hover{
+	color:#F0A102;
+}

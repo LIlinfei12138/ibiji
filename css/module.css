@@ -1,0 +1,409 @@
+/* header{ 
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}*/            
+/* 设置小标题 */
+.small-title{
+	display:flex;
+	align-items:center;	
+	position:relative;
+	padding: 2% 0;
+}
+.small-small-title{
+	font-size:0.8em;
+	color:#DBDBDB;
+}
+.big-zx{
+	/* background-color:#FAFAFA; */
+}
+/* 更多 */
+.gengduo{
+	color:#666666;
+	font-size:0.8em;
+}
+.jieshao{
+	margin:0px;
+}
+.jieshi{
+	width:100%;
+	font-size: 0.8em;
+	color: white;
+	background:rgba(44,44,44,1);
+	opacity:0.7;
+	border-radius:6px 6px 0px 0px;
+	position:absolute;
+	transform: translateY(-2.4em);
+}
+/* 工具图标 */
+.gongju{
+	border-radius: 50%;
+	border: 3px solid white;
+}
+.gj-hr{
+	margin-top:0;
+	color:white;
+}
+/* 友情链接 */
+.youqing{
+	padding:2% 0;
+}
+.bottom-four{
+	border: 1px solid #EEE;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.08);
+	border-radius: 6%;
+	background-color: white;
+	flex-basis: 21%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+.bottom-four > img{
+	border: 2px dashed black;
+	width:60%;
+	height:70%;
+}
+/* 底部logo */
+.yqlj{
+	padding: 1% 0;
+}
+.bottom-logo{
+	display:flex;
+	justify-content:space-between;
+}
+/* 第二个 */
+/* 第二个小标题 */
+.big-second-title{
+	background-image:url('../images/ipad/b-g@2x.png');
+}
+.big-second-title > div{
+	height:100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.second-title-left{
+	width: 50%;
+}
+.second-title-left > img:nth-of-type(1){
+	padding: 1%;
+	vertical-align: middle;
+	background-color: #FAA701;
+	border-radius: 50%;
+}
+.second-title-left > img:nth-of-type(2){
+	vertical-align:middle;
+}
+.leibie{
+	color:white;
+}
+/* 第二个表单 */
+.second-form{
+	text-align:right;
+	margin-left: -24%;
+}
+.ss{
+	width: 89%;
+	vertical-align: middle;
+	padding-left: 2%;
+	height: 2em;
+	border-top-left-radius: 2em;
+	border-bottom-left-radius: 2em;
+	border: 0;
+}
+.second-sousuo{
+	width: 2em;
+	padding: 2%;
+	vertical-align: middle;
+	background-color: #FAA701;
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
+}
+.second-bottom{
+	margin-left: -19%;
+	color: white;
+	font-size: 0.8em;
+}
+.second-bottom > span{
+	padding:0px;
+}
+.lianjie{
+	background-color: white;
+	padding: 1% 0;
+}
+.background_color{
+	background-color:#656C98;
+	border-radius:10%;
+}
+.background_color > a{
+	color:white !important;
+}
+.lianjie a{
+	color:black;
+	width:100%;
+}
+/* 颜色 */
+.big-sljc{
+}
+.one-sljc{
+	margin-bottom:1em;
+	background-color:white;
+	padding:1%;
+}
+.sljc-xinxi > span{
+	color:#999999;
+}
+.sljc-small-title,.number-color{
+	color:#FAA701;
+}
+/* 立即学习 */
+.lijixuexi{
+	padding: 1% 2%;
+	color:white;
+	background-color:#FAA701;
+}
+/* 第三个 */
+.sljc-xinxi.add-zishu > span {
+	margin-right:2em;
+}
+
+.daima{
+	width:35%;
+}
+.big-xq{
+	border: 0.2em solid rgb(246, 164, 3);
+	padding: 2%;
+	background-color:white;
+}
+.xq-title > h3{
+	margin-top:0;
+}
+.xq-content > pre{
+	margin-bottom:0;
+	white-space: pre-line;
+	color:#666666;
+}
+/* 第四个 */
+.hr-lianjie{
+}
+.second-lianjie li{
+	margin-right:1em;
+}
+/* 页数 */
+.page{
+	align-items:center;
+	margin: 1em auto;
+}
+.page > a{
+	color:#BDBFCB;
+}
+.page-background{
+	padding: 0.5% 1%;
+	background:rgba(63,66,83,1);
+	border-radius:50%;
+}
+/* 第四个 */
+.mulu{
+	flex-wrap:wrap;
+}
+.mulu li{
+	width:48%;
+	margin-bottom:1em;
+	background-color:white;
+    list-style-type: none;
+	/* padding:2%; */
+
+}
+.mulu >li > a{
+	color:#333333;
+	 display:block;
+	 padding:2%;
+}
+/* 第六个 */
+.mulu.content{
+	width:41%;
+}
+.big-xljc-content{
+	display:flex;
+}
+.mulu.content a{
+	width:100%;
+	margin: 0;
+	color: #CECECE;
+}
+.mulu.content a{
+	display:block;
+}
+.mulu.content li{
+	width:100%;
+}
+.mulu.content a::before{
+	content: '';
+	width: 0.6em;
+	height: 0.6em;
+	border-radius: 50%;
+	background-color: #CECECE;
+	display: inline-block;
+	margin-right: 0.4em;
+}
+/* 第七个 */
+#no-sousu{
+	height:36em;
+}
+.no-found{
+	color:#999999;
+}
+.big-sousu.not-found{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+/* 第八个 */
+.top-sousu{
+	margin-top:1em;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+}
+.small{
+	width: 1em;
+	height: 0.3em;
+	background: rgba(246,164,3,1);
+	border-radius: 1px;
+}
+.big{
+	width: 2em;
+	height: 0.4em;
+	background: rgba(63,66,83,1);
+	border-radius: 1px;
+	margin: 0 0.2em;
+}
+.sousu-content > li{
+	background-color:white;
+	border-bottom:1px solid rgba(238,238,238,1);
+	list-style-type:none;
+	padding:2% 0%;
+}
+.sousu-content > li > a{
+	color:#3F4253;
+}
+/* 第九个 */
+.big-rjxz{
+	flex-wrap:wrap;
+}
+.one-rjxz{
+	width:49%;
+	padding:0 0.5%;
+	padding-top:0.5%;
+	background-color:white;
+	border:1px solid #CCCCCC;
+	margin-bottom:2em;
+}
+.rj-image{
+	width:100%;
+	height:100%;
+}
+.time-language{
+	color:#999999;
+}
+.right-rjxz{
+	width: 73%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.gy{
+	padding: 1% 2%;
+	margin-right: 2em;
+}
+.gy-rj{
+	margin:1em 0;
+}
+.gy-rj > a{
+	color:white;
+}
+.xiazai{
+	background-color:#3F4253;
+}
+.guanwang{
+	background-color:#21A0FF;
+}
+.wendang{
+	background-color:#F1A102;
+}
+.no-image{
+	padding-left: 2%;
+}
+/* 第10个 */
+.big-rj-xq{
+	padding:2%;
+	background-color:white;
+}
+.rj-xq-image{
+	width:8%;
+}
+.rj-xq-title{
+	vertical-align:top;
+}
+.last-pre{
+	color:#666666;
+	white-space: pre-line;
+}
+.first-rj-image{
+	width:37%;
+	margin:0 2em;
+}
+.second-rj-image{
+	width:36%;
+}
+.last-html{
+	text-align:center;
+	margin:2em auto;
+}
+/* 补充 */
+/*.sanjiao::after{
+	content:'';
+	display:block;
+	width:0;
+	height:0;
+	border:0.5em solid white;
+	position:absolute;
+	top:2%;
+	left:-2%;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+	border-left-color: transparent;
+}*/
+.inside-jctj{
+	background-color:white;
+	padding: 4%;
+}
+.big-jctj-title{
+	margin:0;
+}
+.ydrs{
+	margin-right:2em;
+}
+.ydrs,.fbsj{
+	color:#999999;
+	font-size:0.8em;
+}
+.jcs{
+	width:100%;
+	border:1px solid #CCC;
+}
+.xljc-hr{
+	background-color:white;
+}
+.no-found-image{
+	border:1px dashed;
+}
+.mulu li:hover{
+	background-color: #F1A102 !important;
+}
+.mulu li:hover > a,.mulu li:hover span{
+	color:white;
+}

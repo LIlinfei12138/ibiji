@@ -1,0 +1,57 @@
+MariaDB [ibiji]> create table setCategory(
+    -> id int unsigned auto_increment primary key,//系列教程分类ID
+    -> name char(50)//系列教程分类名
+    -> )default charset=utf8;
+	
+	
+MariaDB [ibiji]> create table sets(
+    -> id int unsigned auto_increment primary key,//系列ID
+    -> name char(255),//系列名
+    -> summary text,//系列简介
+    -> ptime int,//最后发表时间
+    -> ilevel enum('1','2','3','4'),//系列难度
+    -> cid int//类别ID
+    -> )default charset=utf8;
+	
+MariaDB [ibiji]> create table article(
+    -> id int unsigned auto_increment primary key,//文章ID
+    -> title char(255),//文章标题
+    -> count int,//文章查看人数
+    -> ptine int,//文章发表时间
+    -> content text,//文章内容
+	-> sid int,//文章类别
+	-> isSet tinyint default 1//是系列教程还是实例教程，系列教程1 实例教程2
+    -> )default charset=utf8;
+Query OK, 0 rows affected (0.01 sec)
+
+////////////////////////////////////////////////
+
+MariaDB [ibiji]> create table examplecategory(
+    -> id int unsigned auto_increment primary key,
+    -> name char(50)
+    -> )default charset=utf8
+    -> ;
+Query OK, 0 rows affected (0.01 sec)
+////////////////////////////////////////////////
+
+MariaDB [ibiji]> create table toolCategory(
+    -> id int unsigned auto_increment primary key,
+    -> name char(50) not null
+    -> )default charset=utf8;
+Query OK, 0 rows affected (0.03 sec)
+
+MariaDB [ibiji]> create table tools(
+    -> id int unsigned auto_increment primary key,
+    -> name char(50) not null,
+    -> thun char(50) not null,
+    -> summary varchar(255) default '暂无简介',
+    -> content text not null,
+    -> time int not null,
+    -> lang char(25),
+    -> downloadURL varchar(255),
+    -> url varchar(255),
+    -> docURL varchar(255),
+    -> count int not null default 0,
+    -> cid int
+    -> )default charset=utf8;
+Query OK, 0 rows affected (0.01 sec)
